@@ -2,7 +2,7 @@ import java.util.Random;
 import java.util.Scanner;
 
 public class workShop1Task3 {
-    public static void main(String args) {
+    public static void main(String[] args) {
         //3-Kullanıcının 1 ile 10 arasında rastgele bir sayıyı tahmin etmesini isteyen ve doğru tahmin edene kadar devam eden bir program yazınız.
         // (While döngüsü ile yapınız ve rastgele sayı üretmek için Random kütüphanesini kullanınız)
         Scanner scanner = new Scanner(System.in);

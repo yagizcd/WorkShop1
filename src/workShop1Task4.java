@@ -1,5 +1,5 @@
 public class workShop1Task4 {
-    public static void main(String args) {
+    public static void main(String[] args) {
         int mukSayi = 28;
         int mukToplam = 0;
         for (int i =1; i<mukSayi; i++){

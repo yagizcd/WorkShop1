@@ -1,5 +1,5 @@
 public class workShop1Task2 {
-    public static void main(String args) {
+    public static void main(String[] args) {
         //2- Do-While ve While döngüsü nedir? Bununla ilgili örnek yapınız.
         int j=1;
         int k=1;

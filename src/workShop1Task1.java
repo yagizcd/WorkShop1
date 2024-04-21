@@ -1,7 +1,7 @@
 import java.util.Scanner;
 
 public class workShop1Task1 {
-    public static void main(String args) {
+    public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
 
         System.out.print("Kaç ürün almak istiyorsunuz? ");

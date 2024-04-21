@@ -18,17 +18,17 @@ public class Main {
                     "Seciminiz: ");
             girdi = scanner.nextInt();
             if (girdi == 1)
-                workShop1Task1.main("deneme");
+                workShop1Task1.main(args);
             else if(girdi ==2)
-                workShop1Task2.main("deneme");
+                workShop1Task2.main(args);
             else if(girdi==3)
-                workShop1Task3.main("deneme");
+                workShop1Task3.main(args);
             else if(girdi == 4)
-                workShop1Task4.main("deneme");
+                workShop1Task4.main(args);
             else if (girdi ==5)
-                workShop1Task5.main("deneme");
+                workShop1Task5.main(args);
             else if(girdi ==6)
-                workShop1Task6.main("deneme");
+                workShop1Task6.main(args);
             else if(girdi == 0) {
                 return;
             }

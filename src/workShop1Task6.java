@@ -1,23 +1,48 @@
+import java.util.Scanner;
 public class workShop1Task6 {
-    public static void main(String args) {
-        //6- kullanıcıdan öğrenci sayısını isteyen
-        // her öğrenci için öğrenci adı,öğrenci soyadı,1.sınav notu,
-        // 2.sınav notu,3.sınav notu isteyen
-        // ve daha sonra not ortalamasını hesaplayıp ekrana yazdıran
-        // algoritma yapınız.(For döngüsü kullanınız)
-/*
-        String[] ogrenci = {"Ahmet","Veli","Yagiz","Sena","Bengu","Ekin","Emel","Kubra"};
-        Random random = Random.nextInt();
-        int[] sınav1Notlar = new int[8];
-        int[] sınav2Notlar = new int[8];
-        int[] sınav2Notlar = new int[8];
-        for(int i =0; i<8; i++){
-            int randomnumber = random.nextInt();
-
-        }
-
+    public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
-        int sayiAl = scanner.nextInt();
-*/
+
+
+        System.out.print("Öğrenci sayısını giriniz: ");
+        int ogrenciSayisi = scanner.nextInt();
+
+
+        double toplamNot = 0;
+
+
+        for (int i = 1; i <= ogrenciSayisi; i++) {
+
+            System.out.println("\n" + i + ". öğrenci bilgilerini giriniz:");
+
+            System.out.print("Öğrenci adı: ");
+            String ad = scanner.next();
+
+            System.out.print("Öğrenci soyadı: ");
+            String soyad = scanner.next();
+
+            System.out.print("1. sınav notu: ");
+            double not1 = scanner.nextDouble();
+
+            System.out.print("2. sınav notu: ");
+            double not2 = scanner.nextDouble();
+
+            System.out.print("3. sınav notu: ");
+            double not3 = scanner.nextDouble();
+
+            if (not1 <0 || not2 <0 || not3 <0){
+                System.out.println("Notlardan herhangi biri 0'dan küçük");
+                continue;
+            }
+
+
+            double ortalama = (not1 + not2 + not3) / 3;
+
+
+            toplamNot += ortalama;
+
+
+            System.out.println("\n" + ad + " " + soyad + " için not ortalaması: " + ortalama);
+        }
     }
 }

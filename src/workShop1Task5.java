@@ -1,5 +1,5 @@
 public class workShop1Task5 {
-    public static void main(String args) {
+    public static void main(String[] args) {
         //5- String metotlarını araştırınız. Her bir metot için örnek yapınız.
         String str = "Etiya";
         int length = str.length();
